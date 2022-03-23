@@ -1,14 +1,16 @@
 import type { NextPage } from 'next'
-import { ContainerDivider, ContainerParagraphComponent } from '../Components/Container'
 import DescriptionSection from '../Components/Sections/Home/DescriptionSection'
 import WhoIsSection from '../Components/Sections/Home/WhoIsSection'
-import { Title } from '../Components/Title'
+import WorkSection from '../Components/Sections/Home/WorkSection'
+import WorkSpaceSection from '../Components/Sections/Home/WorkSpaceSection'
 
 const Home: NextPage = () => {
   return (
     <>
       <DescriptionSection />
       <WhoIsSection />
+      <WorkSection />
+      <WorkSpaceSection />
     </>
   )
 }
