@@ -1,11 +1,8 @@
 import Link from "next/link"
 import { useRouter } from "next/router";
 import { FC } from "react"
+import page from "../../types/page";
 
-interface page {
-    title: string,
-    href: string
-}
 
 interface props {
     pages: page[]
