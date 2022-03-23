@@ -7,7 +7,7 @@ const WhoIsSection = () => {
         <>
             <ContainerSectionComponent title={"C'est qui lui?"}>
                 <ContainerParagraphComponent>
-                    Je m&apos;appelle Adrian Tombu, Franco-Belge de profession (avec un fort penchant pour la bière brune d&apos;Abbaye), développeur de naissance, né durant l&apos;inoubliable année 1986 : catastrophe de Tchernobyl, explosion de la navette Challenger en direct devant des millions de téléspectateurs, ou encore passage de la magnifique Comète de Halley (une révolution tous les 76 ans, ça se fête !). Ah et niveau vin, c&apos;est également un millésime exceptionnel.
+                    Je m&apos;appelle Younes Beaila, Franco-Belge de profession (avec un fort penchant pour la bière brune d&apos;Abbaye), développeur de naissance, né durant l&apos;inoubliable année 1986 : catastrophe de Tchernobyl, explosion de la navette Challenger en direct devant des millions de téléspectateurs, ou encore passage de la magnifique Comète de Halley (une révolution tous les 76 ans, ça se fête !). Ah et niveau vin, c&apos;est également un millésime exceptionnel.
                 </ContainerParagraphComponent>
                 <ContainerParagraphComponent>
                     Né en Belgique, j&apos;ai un peu bougé en sortant des études (tout est indiqué sur mon LinkedIn qui me sert de CV centralisé), avant d&apos;atterrir début 2017 à... Puygaillard-de-Quercy, dans la campagne du Tarn-et-Garonne. Un village de 387 âmes qui se situe à 1h de la capitale historique du Languedoc, mais Toulouse vous parlera certainement plus que mon bled perdu entre Montricoux et Bruniquel !
