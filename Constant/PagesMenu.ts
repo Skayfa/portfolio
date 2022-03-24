@@ -11,7 +11,7 @@ const Page: page[] = [
     },
     {
         title: "Blog",
-        href: "/b"
+        href: "/blog"
     },
     {
         title: "CGV",
