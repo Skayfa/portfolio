@@ -6,7 +6,7 @@ import Page from '../Constant/PagesMenu'
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-      <div className="bg-gray text-white flex flex-col">
+      <div className="bg-gray text-white flex flex-col relative">
         <Menu pages={Page} />
         <div className="max-w-7xl w-full h-full overscroll-contain flex-1 px-4  mx-auto ">
           <Component {...pageProps} />

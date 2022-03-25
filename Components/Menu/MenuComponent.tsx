@@ -1,7 +1,8 @@
 import Link from "next/link"
 import { useRouter } from "next/router";
-import { FC } from "react"
+import { FC, useState } from "react"
 import page from "../../types/page";
+import { Modal } from "../Modal";
 
 
 interface props {
@@ -19,6 +20,7 @@ const LinkPage: FC<page> = ({ title, href }) => {
 }
 
 const MenuComponent: FC<props> = ({ pages }) => {
+    const [isOpen, setOpen] = useState(false);
     return (
         <>
             <div className="w-full justify-end items-end max-w-7xl py-12 px-6 mx-auto flex">
@@ -31,8 +33,25 @@ const MenuComponent: FC<props> = ({ pages }) => {
                         })
                     }
                 </ul>
-                <div className="sm:hidden">Icone</div>
+                <div className="sm:hidden hover:cursor-pointer" onClick={() => setOpen(true)}>
+                    menu
+                </div>
             </div>
+            <Modal
+                className="sm:hidden"
+                isOpen={isOpen}
+                setOpen={setOpen}
+            >
+                <div>
+                    {
+                        pages.map((e, i) => {
+                            return (
+                                <LinkPage title={e.title} href={e.href} key={i} />
+                            )
+                        })
+                    }
+                </div>
+            </Modal>
         </>
     )
 }
