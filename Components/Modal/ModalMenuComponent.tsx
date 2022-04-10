@@ -1,7 +1,7 @@
 import { Dispatch, FC, SetStateAction, useEffect, useState } from "react";
 import ReactDOM from "react-dom";
 import Fade from "../Animation/Fade";
-
+// import MenuSVG from '../../assets/svg/menu.svg'
 interface props {
     className: string,
     isOpen: boolean,
@@ -18,7 +18,8 @@ const Modal: FC<props> = ({ children, className, setOpen, isOpen }) => {
             <Fade visible={isOpen}>
                 <div className="bg-white w-2/4 fixed bottom-0 top-0 right-0 p-6 transition-[width] ease-in-out delay-150">
                     <div className="flex w-full justify-end hover:cursor-pointer" onClick={close}>
-                        X
+                        {/* <MenuSVG /> */}
+                        x
                     </div>
                     {children}
                 </div>

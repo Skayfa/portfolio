@@ -11,7 +11,6 @@ interface props {
 const Fade: FC<props> = ({ visible, children }) => {
     const childRef = useRef(children)
     const [state, setState] = useState(visible ? VISIBLE : HIDDEN);
-    const className = state === VISIBLE ? "fade" : "fade out";
 
     if (visible) {
         childRef.current = children
@@ -42,7 +41,13 @@ const Fade: FC<props> = ({ visible, children }) => {
     if (state === HIDDEN) {
         return null
     }
-    return <div className={className}>
+
+    let style = { transitionDuration: `300ms`, transitionProperty: 'opacity', opacity: 1 }
+    if (state !== VISIBLE) {
+        style.opacity = 0;
+    }
+
+    return <div style={style}>
         {childRef.current}
     </div>
 }
