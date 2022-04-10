@@ -21,6 +21,7 @@ const LinkPage: FC<page> = ({ title, href }) => {
 
 const MenuComponent: FC<props> = ({ pages }) => {
     const [isOpen, setOpen] = useState(false);
+    const close = () => setOpen(true)
     return (
         <>
             <div className="w-full justify-end items-end max-w-7xl py-12 px-6 mx-auto flex">
@@ -33,7 +34,7 @@ const MenuComponent: FC<props> = ({ pages }) => {
                         })
                     }
                 </ul>
-                <div className="sm:hidden hover:cursor-pointer" onClick={() => setOpen(true)}>
+                <div className="sm:hidden hover:cursor-pointer" onClick={close}>
                     menu
                 </div>
             </div>
