@@ -10,6 +10,7 @@ interface props {
 
 const Modal: FC<props> = ({ children, className, setOpen, isOpen }) => {
     const close = () => setOpen(false)
+
     return (
         <>
             <div className={`fixed top-0 left-0 right-0 bottom-0 bg-black bg-opacity-30 backdrop-blur-sm w-full flex justify-end ${className} ${isOpen ? 'visible' : 'hidden'}`} onClick={close}>

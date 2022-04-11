@@ -20,7 +20,7 @@ const DescriptionSection = () => {
             </div>
         </div>
         <ContainerDivider>
-            <Title title="Tech lead senior" />
+            <Title title="Tech lead" />
             <>
                 <ContainerParagraphComponent>
                     TL&#59;DR
