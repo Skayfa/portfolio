@@ -17,10 +17,9 @@ import image2 from '@/images/photos/image-2.jpg'
 import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
-import logoStarbucks from '@/images/logos/starbucks.svg'
+import logoCodein from '@/images/photos/codein.png'
+import logoAirbnb from '@/images/logos/capgemini.svg'
+import logoMatious from '@/images/photos/matious.png'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -139,35 +138,28 @@ function Newsletter() {
 function Resume() {
   let resume = [
     {
-      company: 'Planetaria',
-      title: 'CEO',
-      logo: logoPlanetaria,
-      start: '2019',
+      company: 'Codein',
+      title: 'Software Engineer',
+      logo: logoCodein,
+      start: '2022',
       end: {
         label: 'Present',
         dateTime: new Date().getFullYear(),
       },
     },
     {
-      company: 'Airbnb',
-      title: 'Product developper',
+      company: 'Capgemini',
+      title: 'Software Engineer',
       logo: logoAirbnb,
-      start: '2014',
-      end: '2019',
+      start: '2020',
+      end: '2022',
     },
     {
-      company: 'Facebook',
-      title: 'iOS Software Engineer',
-      logo: logoFacebook,
-      start: '2011',
-      end: '2014',
-    },
-    {
-      company: 'Starbucks',
-      title: 'Shift Supervisor',
-      logo: logoStarbucks,
-      start: '2008',
-      end: '2011',
+      company: 'Matious',
+      title: 'Typescript Software Engineer',
+      logo: logoMatious,
+      start: '2019',
+      end: '2020',
     },
   ]
 
@@ -261,12 +253,10 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software developper, founder, and amateur astronaut.
+            Software developper, founder, and a sports fan.
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I’m Younes, a software developper and entrepreneur based in France. I’m the founder and CEO of EXE, where we develop
-            technologies that empower regular people to explore space on their
-            own terms.
+            I’m Younes, a software engineer with 5 years of experience in developing and maintaining web and mobile applications. I specialize in creating responsive and user-friendly designs with a focus on performance and scalability.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink
@@ -280,12 +270,12 @@ export default function Home({ articles }) {
               icon={InstagramIcon}
             />
             <SocialLink
-              href="https://github.com"
+              href="https://github.com/Skayfa"
               aria-label="Follow on GitHub"
               icon={GitHubIcon}
             />
             <SocialLink
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/younes-beaila/"
               aria-label="Follow on LinkedIn"
               icon={LinkedInIcon}
             />
