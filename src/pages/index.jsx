@@ -17,10 +17,9 @@ import image2 from '@/images/photos/image4.jpg'
 import image3 from '@/images/photos/image1.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image3.jpg'
-import logoAirbnb from '@/images/logos/airbnb.svg'
-import logoFacebook from '@/images/logos/facebook.svg'
 import logoCodein from '@/images/photos/codein.png'
 import logoMatious from '@/images/photos/matious.png'
+import logoCapgemini from '@/images/logos/capgemini.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
@@ -108,6 +107,9 @@ function SocialLink({ icon: Icon, ...props }) {
 }
 
 function Newsletter() {
+  const handleSubmit = async () => {
+    
+  }
   return (
     <form
       action="/thank-you"
@@ -128,7 +130,7 @@ function Newsletter() {
           required
           className="min-w-0 flex-auto appearance-none rounded-md border border-zinc-900/10 bg-white px-3 py-[calc(theme(spacing.2)-1px)] shadow-md shadow-zinc-800/5 placeholder:text-zinc-400 focus:border-teal-500 focus:outline-none focus:ring-4 focus:ring-teal-500/10 dark:border-zinc-700 dark:bg-zinc-700/[0.15] dark:text-zinc-200 dark:placeholder:text-zinc-500 dark:focus:border-teal-400 dark:focus:ring-teal-400/10 sm:text-sm"
         />
-        <Button type="submit" className="ml-4 flex-none">
+        <Button type="submit" className="ml-4 flex-none" onClick={handleSubmit}>
           Join
         </Button>
       </div>
@@ -151,7 +153,7 @@ function Resume() {
     {
       company: 'Capgemini',
       title: 'Software Engineer',
-      logo: logoAirbnb,
+      logo: logoCapgemini,
       start: '2020',
       end: '2022',
     },
@@ -173,7 +175,7 @@ function Resume() {
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
+            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 bg-zinc-800 dark:ring-0">
               <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -254,12 +256,10 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software developper.
+            Software Engineer!
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Younes, a software developper and entrepreneur based in France. I&apos;m the founder and CEO of EXE, where we develop
-            technologies that empower regular people to explore their
-            own terms potential.
+            I&apos;m Younes,  a software developer and entrepreneur based in France. As the founder and CEO/CTO of EXE, I am proud to introduce our innovative sports app that helps people connect with coaches and take their fitness journey to the next level.
           </p>
           <div className="mt-6 flex gap-6">
             <SocialLink

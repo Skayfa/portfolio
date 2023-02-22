@@ -61,12 +61,20 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I&apos;m Younes Be. I live in Strasbourg City, where I resolve problems.
+              Problem Solver and Innovator Dedicated to Making a Positive Impact
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I&apos;ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old,...
+                Hello, my name is Younes Be and I&apos;m based in Strasbourg City. As a problem solver, I&apos;m dedicated to finding effective solutions that improve people&apos;s lives and make a positive impact on the community.
+              </p>
+              <p>
+Living in Strasbourg City, I&apos;m inspired by the vibrant culture and diverse perspectives of the people around me. I enjoy working with individuals and organizations to address complex challenges and develop innovative approaches to problem-solving.
+              </p>
+              <p>
+Whether it&apos;s developing software solutions, addressing operational inefficiencies, or improving customer experiences, I&apos;m passionate about helping others overcome obstacles and achieve their goals.
+              </p>
+              <p>
+Thank you for your interest and I look forward to the opportunity to work with you in the future.
               </p>
             </div>
           </div>
@@ -85,7 +93,7 @@ export default function About() {
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:younesbeaila@gmail.com"
+                href="mailto:younes.beaila@exeapp.tech"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
