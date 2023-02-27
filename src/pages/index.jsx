@@ -23,6 +23,7 @@ import logoCapgemini from '@/images/logos/capgemini.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
+import { ApolloIcon, GraphqlIcon, NodeJsIcon, TerraformIcon, TypescriptIcon } from '@/components/Icons'
 
 function MailIcon(props) {
   return (
@@ -103,6 +104,14 @@ function SocialLink({ icon: Icon, ...props }) {
     <Link className="group -m-1 p-1" {...props}>
       <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
     </Link>
+  )
+}
+
+function Expertise({ icon: Icon, ...props }) {
+  return (
+    <div>
+      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
+    </div>
   )
 }
 
@@ -256,11 +265,21 @@ export default function Home({ articles }) {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software Engineer!
+            Software Engineer !
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            I&apos;m Younes,  a software developer and entrepreneur based in France. As the founder and CEO/CTO of EXE, I am proud to introduce our innovative sports app that helps people connect with coaches and take their fitness journey to the next level.
+            Hey 🤘, I&apos;m Younes,  a software developer and entrepreneur based in France. As the founder and CEO/CTO of EXE, I am proud to introduce our innovative sports app that helps people connect with coaches and take their fitness journey to the next level.
           </p>
+          <h3 className="text-lg font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl mt-4">
+            My Main Stack:
+          </h3>
+          <div className="flex justify-between dark:text-white mt-4">
+            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><TypescriptIcon/>Typescript</div>
+            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><ApolloIcon/>Apollo</div>
+            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><GraphqlIcon/>Graphql</div>
+            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><NodeJsIcon/>NodeJS</div>
+            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><TerraformIcon/>Terraform</div>
+          </div>
           <div className="mt-6 flex gap-6">
             <SocialLink
               href="https://twitter.com/YBeaila"
