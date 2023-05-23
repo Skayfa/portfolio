@@ -11,6 +11,13 @@ import {
   LinkedInIcon,
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
+import {
+  ApolloIcon,
+  GraphqlIcon,
+  NodeJsIcon,
+  TerraformIcon,
+  TypescriptIcon,
+} from '@/components/Icons'
 
 function SocialLink({ className, href, children, icon: Icon }) {
   return (
@@ -65,17 +72,58 @@ export default function About() {
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                Hello, my name is Younes Be and I&apos;m based in Strasbourg City. As a problem solver, I&apos;m dedicated to finding effective solutions that improve people&apos;s lives and make a positive impact on the community.
+                Hello, my name is Younes Be and I&apos;m based in Strasbourg
+                City. As a problem solver, I&apos;m dedicated to finding
+                effective solutions that improve people&apos;s lives and make a
+                positive impact on the community.
               </p>
               <p>
-Living in Strasbourg City, I&apos;m inspired by the vibrant culture and diverse perspectives of the people around me. I enjoy working with individuals and organizations to address complex challenges and develop innovative approaches to problem-solving.
+                Living in Strasbourg City, I&apos;m inspired by the vibrant
+                culture and diverse perspectives of the people around me. I
+                enjoy working with individuals and organizations to address
+                complex challenges and develop innovative approaches to
+                problem-solving.
               </p>
               <p>
-Whether it&apos;s developing software solutions, addressing operational inefficiencies, or improving customer experiences, I&apos;m passionate about helping others overcome obstacles and achieve their goals.
+                Whether it&apos;s developing software solutions, addressing
+                operational inefficiencies, or improving customer experiences,
+                I&apos;m passionate about helping others overcome obstacles and
+                achieve their goals.
               </p>
               <p>
-Thank you for your interest and I look forward to the opportunity to work with you in the future.
+                Thank you for your interest and I look forward to the
+                opportunity to work with you in the future.
               </p>
+            </div>
+
+            <div className="flex w-full">
+              <div className="flex-1">
+                <h3 className="mt-4 text-lg font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl">
+                  Stack:
+                </h3>
+                <div className="mt-4 grid grid-cols-6 items-center justify-between gap-4 gap-y-11 dark:text-white">
+                  <div className="col-span-2 flex flex-col items-center space-y-3 duration-700 hover:scale-110 hover:cursor-pointer">
+                    <TypescriptIcon />
+                    <span>Typescript</span>
+                  </div>
+                  <div className="col-span-2 flex flex-col items-center space-y-3 duration-700 hover:scale-110 hover:cursor-pointer">
+                    <ApolloIcon />
+                    <span>Apollo</span>
+                  </div>
+                  <div className="col-span-2 flex flex-col items-center space-y-3 duration-700 hover:scale-110 hover:cursor-pointer">
+                    <GraphqlIcon />
+                    <span>Graphql</span>
+                  </div>
+                  <div className="col-span-2 col-start-2 flex flex-col items-center space-y-3 duration-700 hover:scale-110 hover:cursor-pointer">
+                    <NodeJsIcon />
+                    <span>NodeJS</span>
+                  </div>
+                  <div className="col-span-2 flex flex-col items-center space-y-3 duration-700 hover:scale-110 hover:cursor-pointer">
+                    <TerraformIcon />
+                    <span>Terraform</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="lg:pl-20">
@@ -83,13 +131,25 @@ Thank you for your interest and I look forward to the opportunity to work with y
               <SocialLink href="https://twitter.com/YBeaila" icon={TwitterIcon}>
                 Follow on Twitter
               </SocialLink>
-              <SocialLink href="https://www.instagram.com/younes_bee/" icon={InstagramIcon} className="mt-4">
+              <SocialLink
+                href="https://www.instagram.com/younes_bee/"
+                icon={InstagramIcon}
+                className="mt-4"
+              >
                 Follow on Instagram
               </SocialLink>
-              <SocialLink href="https://github.com/Skayfa" icon={GitHubIcon} className="mt-4">
+              <SocialLink
+                href="https://github.com/Skayfa"
+                icon={GitHubIcon}
+                className="mt-4"
+              >
                 Follow on GitHub
               </SocialLink>
-              <SocialLink href="https://www.linkedin.com/in/younes-beaila/" icon={LinkedInIcon} className="mt-4">
+              <SocialLink
+                href="https://www.linkedin.com/in/younes-beaila/"
+                icon={LinkedInIcon}
+                className="mt-4"
+              >
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink

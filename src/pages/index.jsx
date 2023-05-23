@@ -23,7 +23,13 @@ import logoCapgemini from '@/images/logos/capgemini.svg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import { formatDate } from '@/lib/formatDate'
-import { ApolloIcon, GraphqlIcon, NodeJsIcon, TerraformIcon, TypescriptIcon } from '@/components/Icons'
+import {
+  ApolloIcon,
+  GraphqlIcon,
+  NodeJsIcon,
+  TerraformIcon,
+  TypescriptIcon,
+} from '@/components/Icons'
 
 function MailIcon(props) {
   return (
@@ -116,9 +122,7 @@ function Expertise({ icon: Icon, ...props }) {
 }
 
 function Newsletter() {
-  const handleSubmit = async () => {
-    
-  }
+  const handleSubmit = async () => {}
   return (
     <form
       action="/thank-you"
@@ -184,7 +188,7 @@ function Resume() {
       <ol className="mt-6 space-y-4">
         {resume.map((role, roleIndex) => (
           <li key={roleIndex} className="flex gap-4">
-            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 bg-zinc-800 dark:ring-0">
+            <div className="relative mt-1 flex h-10 w-10 flex-none items-center justify-center rounded-full bg-zinc-800 shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:ring-0">
               <Image src={role.logo} alt="" className="h-7 w-7" unoptimized />
             </div>
             <dl className="flex flex-auto flex-wrap gap-x-2">
@@ -254,9 +258,7 @@ export default function Home({ articles }) {
   return (
     <>
       <Head>
-        <title>
-          Younes Be - Software developper.
-        </title>
+        <title>Younes Be - Software developper.</title>
         <meta
           name="description"
           content="I’m Younes, a software developper and entrepreneur based in New York City. I’m the founder and CEO of Planetaria, where we develop technologies that empower regular people to explore their own terms potential."
@@ -268,44 +270,25 @@ export default function Home({ articles }) {
             Software Engineer !
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
-            Hey 🤘, I&apos;m Younes,  a software developer and entrepreneur based in France. As the founder and CEO/CTO of EXE, I am proud to introduce our innovative sports app that helps people connect with coaches and take their fitness journey to the next level.
+            Hello and welcome, 🤘, I&apos;m Younes, a Full Stack developer
+            driven by a passion for technological innovation and
+            problem-solving. This portfolio showcases select projects I&apos;ve
+            undertaken, demonstrating my ability to deliver robust and scalable
+            software solutions.
           </p>
-          <h3 className="text-lg font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-xl mt-4">
-            My Main Stack:
-          </h3>
-          <div className="flex justify-between dark:text-white mt-4">
-            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><TypescriptIcon/>Typescript</div>
-            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><ApolloIcon/>Apollo</div>
-            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><GraphqlIcon/>Graphql</div>
-            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><NodeJsIcon/>NodeJS</div>
-            <div className="hover:scale-110 duration-700 hover:cursor-pointer"><TerraformIcon/>Terraform</div>
-          </div>
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com/YBeaila"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://www.instagram.com/younes_bee/"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com/Skayfa"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://www.linkedin.com/in/younes-beaila/"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
-          </div>
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            Whether you&apos;re a fellow developer, a recruiter, or a company
+            seeking a partner for your next project, I invite you to explore my
+            work. Don&apos;t hesitate to reach out for any inquiries or
+            discussions.
+          </p>
+          <p className="mt-2 text-base text-zinc-600 dark:text-zinc-400">
+            Thank you for visiting!
+          </p>
         </div>
       </Container>
       <Photos />
-      <Container className="mt-24 md:mt-28">
+      <Container className="mt-12 md:mt-14">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none lg:grid-cols-2">
           <div className="flex flex-col gap-16">
             {articles.map((article) => (
@@ -313,7 +296,6 @@ export default function Home({ articles }) {
             ))}
           </div>
           <div className="space-y-10 lg:pl-16 xl:pl-24">
-            <Newsletter />
             <Resume />
           </div>
         </div>
