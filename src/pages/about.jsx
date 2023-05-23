@@ -93,11 +93,11 @@ Thank you for your interest and I look forward to the opportunity to work with y
                 Follow on LinkedIn
               </SocialLink>
               <SocialLink
-                href="mailto:younes.beaila@exeapp.tech"
+                href="mailto:beailayounes@outlook.com"
                 icon={MailIcon}
                 className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
               >
-                Younes@exe.tech
+                beailayounes@outlook.com
               </SocialLink>
             </ul>
           </div>
