@@ -18,7 +18,7 @@ const projects = [
     name: 'Teuser',
     description:
       'Web app to track communication between clients, shippers and providers.',
-    link: { href: 'https://web.teuser.com/', label: 'Teuser' },
+    link: { href: 'https://web.teuser.com/login', label: 'Teuser' },
     logo: teuser,
   },
 ]
