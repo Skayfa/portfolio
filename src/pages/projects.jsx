@@ -3,15 +3,23 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import exe from '@/images/logos/exe.svg'
+import teuser from '@/images/logos/teuser.svg'
 
 const projects = [
   {
     name: 'EXE',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'https://www.exefit.app/', label: 'exeapp.tech' },
-    logo: logoPlanetaria,
+      'Social mobile app for athletes.',
+    link: { href: 'https://www.exefit.app/', label: 'EXE' },
+    logo: exe,
+  },
+  {
+    name: 'Teuser',
+    description:
+      'Web app to track communication between clients, shippers and providers.',
+    link: { href: 'https://web.teuser.com/', label: 'Teuser' },
+    logo: teuser,
   },
 ]
 
