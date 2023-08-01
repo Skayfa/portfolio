@@ -10,7 +10,7 @@ const projects = [
     name: 'EXE',
     description:
       'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://exeapp.tech', label: 'exeapp.tech' },
+    link: { href: 'https://www.exefit.app/', label: 'exeapp.tech' },
     logo: logoPlanetaria,
   },
 ]
